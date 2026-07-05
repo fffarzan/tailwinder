@@ -1,0 +1,282 @@
+@import "tailwindcss";
+
+:root {
+  --primary-0: #000000;
+  --primary-10: #21005d;
+  --primary-20: #381e72;
+  --primary-30: #4f378b;
+  --primary-40: #6750a4;
+  --primary-50: #7f67be;
+  --primary-60: #9a82db;
+  --primary-70: #b69df8;
+  --primary-80: #d0bcff;
+  --primary-90: #eaddff;
+  --primary-95: #f6edff;
+  --primary-99: #fffbfe;
+  --primary-100: #ffffff;
+
+  --secondary-0: #000000;
+  --secondary-10: #1d192b;
+  --secondary-20: #332d41;
+  --secondary-30: #4a4458;
+  --secondary-40: #625b71;
+  --secondary-50: #7a7289;
+  --secondary-60: #958da5;
+  --secondary-70: #b0a7c0;
+  --secondary-80: #ccc2dc;
+  --secondary-90: #e8def8;
+  --secondary-95: #f6edff;
+  --secondary-99: #fffbfe;
+  --secondary-100: #ffffff;
+
+  --tertiary-0: #000000;
+  --tertiary-10: #31111d;
+  --tertiary-20: #492532;
+  --tertiary-30: #633b48;
+  --tertiary-40: #7d5260;
+  --tertiary-50: #986977;
+  --tertiary-60: #b58392;
+  --tertiary-70: #d29dac;
+  --tertiary-80: #efb8c8;
+  --tertiary-90: #ffd8e4;
+  --tertiary-95: #ffecf1;
+  --tertiary-99: #fffbfa;
+  --tertiary-100: #ffffff;
+
+  --error-0: #000000;
+  --error-10: #410e0b;
+  --error-20: #601410;
+  --error-30: #8c1d18;
+  --error-40: #b3261e;
+  --error-50: #dc362e;
+  --error-60: #e46962;
+  --error-70: #ec928e;
+  --error-80: #f2b8b5;
+  --error-90: #f9dedc;
+  --error-95: #fceeee;
+  --error-99: #fffbf9;
+  --error-100: #ffffff;
+
+  --neutral-0: #000000;
+  --neutral-4: #0f0d13;
+  --neutral-6: #141218;
+  --neutral-10: #1d1b20;
+  --neutral-12: #211f26;
+  --neutral-17: #2b2930;
+  --neutral-20: #322f35;
+  --neutral-22: #36343b;
+  --neutral-24: #3b383e;
+  --neutral-30: #48464c;
+  --neutral-40: #605d64;
+  --neutral-50: #79767d;
+  --neutral-60: #938f96;
+  --neutral-70: #aea9b1;
+  --neutral-80: #cac5cd;
+  --neutral-90: #e6e0e9;
+  --neutral-92: #ece6f0;
+  --neutral-94: #f3edf7;
+  --neutral-95: #f5eff7;
+  --neutral-96: #f7f2fa;
+  --neutral-87: #ded8e1;
+  --neutral-98: #fef7ff;
+  --neutral-99: #fffbff;
+  --neutral-100: #ffffff;
+
+  --neutral-variant-0: #000000;
+  --neutral-variant-10: #1d1a22;
+  --neutral-variant-20: #322f37;
+  --neutral-variant-30: #49454f;
+  --neutral-variant-40: #605d66;
+  --neutral-variant-50: #79747e;
+  --neutral-variant-60: #938f99;
+  --neutral-variant-70: #aea9b4;
+  --neutral-variant-80: #cac4d0;
+  --neutral-variant-90: #e7e0ec;
+  --neutral-variant-95: #f5eefa;
+  --neutral-variant-99: #fffbfe;
+  --neutral-variant-100: #ffffff;
+
+  --primary: var(--primary-40);
+  --on-primary: var(--primary-100);
+  --primary-container: var(--primary-90);
+  --on-primary-container: var(--primary-30);
+
+  --primary-fixed: var(--primary-90);
+  --primary-fixed-dim: var(--primary-80);
+  --on-primary-fixed: var(--primary-10);
+  --on-primary-fixed-variant: var(--primary-30);
+
+  --secondary: var(--secondary-40);
+  --on-secondary: var(--secondary-100);
+  --secondary-container: var(--secondary-90);
+  --on-secondary-container: var(--secondary-30);
+
+  --secondary-fixed: var(--secondary-90);
+  --secondary-fixed-dim: var(--secondary-80);
+  --on-secondary-fixed: var(--secondary-10);
+  --on-secondary-fixed-variant: var(--secondary-30);
+
+  --tertiary: var(--tertiary-40);
+  --on-tertiary: var(--tertiary-100);
+  --tertiary-container: var(--tertiary-90);
+  --on-tertiary-container: var(--tertiary-30);
+
+  --tertiary-fixed: var(--tertiary-90);
+  --tertiary-fixed-dim: var(--tertiary-80);
+  --on-tertiary-fixed: var(--tertiary-10);
+  --on-tertiary-fixed-variant: var(--tertiary-30);
+
+  --error: var(--error-40);
+  --on-error: var(--error-100);
+  --error-container: var(--error-90);
+  --on-error-container: var(--error-30);
+
+  --surface-dim: var(--neutral-87);
+  --surface: var(--neutral-98);
+  --surface-bright: var(--neutral-98);
+
+  --surface-container-lowest: var(--neutral-100);
+  --surface-container-low: var(--neutral-96);
+  --surface-container: var(--neutral-94);
+  --surface-container-high: var(--neutral-92);
+  --surface-container-highest: var(--neutral-90);
+
+  --on-surface: var(--neutral-10);
+  --on-surface-variant: var(--neutral-variant-30);
+  --outline: var(--neutral-variant-50);
+  --outline-variant: var(--neutral-variant-80);
+
+  --inverse-surface: var(--neutral-20);
+  --inverse-on-surface: var(--neutral-95);
+  --inverse-primary: var(--primary-80);
+  --scrim: var(--neutral-0);
+  --shadow: var(--neutral-0);
+}
+
+.dark {
+  --primary: var(--primary-80);
+  --on-primary: var(--primary-20);
+  --primary-container: var(--primary-30);
+  --on-primary-container: var(--primary-90);
+
+  --primary-fixed: var(--primary-90);
+  --primary-fixed-dim: var(--primary-80);
+  --on-primary-fixed: var(--primary-10);
+  --on-primary-fixed-variant: var(--primary-30);
+
+  --secondary: var(--secondary-80);
+  --on-secondary: var(--secondary-20);
+  --secondary-container: var(--secondary-30);
+  --on-secondary-container: var(--secondary-90);
+
+  --secondary-fixed: var(--secondary-90);
+  --secondary-fixed-dim: var(--secondary-80);
+  --on-secondary-fixed: var(--secondary-10);
+  --on-secondary-fixed-variant: var(--secondary-30);
+
+  --tertiary: var(--tertiary-80);
+  --on-tertiary: var(--tertiary-20);
+  --tertiary-container: var(--tertiary-30);
+  --on-tertiary-container: var(--tertiary-90);
+
+  --tertiary-fixed: var(--tertiary-90);
+  --tertiary-fixed-dim: var(--tertiary-80);
+  --on-tertiary-fixed: var(--tertiary-10);
+  --on-tertiary-fixed-variant: var(--tertiary-30);
+
+  --error: var(--error-80);
+  --on-error: var(--error-20);
+  --error-container: var(--error-30);
+  --on-error-container: var(--error-90);
+
+  --surface-dim: var(--neutral-6);
+  --surface: var(--neutral-6);
+  --surface-bright: var(--neutral-24);
+
+  --surface-container-lowest: var(--neutral-4);
+  --surface-container-low: var(--neutral-10);
+  --surface-container: var(--neutral-12);
+  --surface-container-high: var(--neutral-17);
+  --surface-container-highest: var(--neutral-22);
+
+  --on-surface: var(--neutral-90);
+  --on-surface-variant: var(--neutral-variant-80);
+  --outline: var(--neutral-variant-60);
+  --outline-variant: var(--neutral-variant-30);
+
+  --inverse-surface: var(--neutral-90);
+  --inverse-on-surface: var(--neutral-20);
+  --inverse-primary: var(--primary-40);
+  --scrim: var(--neutral-0);
+  --shadow: var(--neutral-0);
+}
+
+@theme {
+  --color-*: initial;
+
+  --color-primary: var(--primary-40);
+  --color-on-primary: var(--primary-100);
+  --color-primary-container: var(--primary-90);
+  --color-on-primary-container: var(--primary-30);
+
+  --color-primary-fixed: var(--primary-90);
+  --color-primary-fixed-dim: var(--primary-80);
+  --color-on-primary-fixed: var(--primary-10);
+  --color-on-primary-fixed-variant: var(--primary-30);
+
+  --color-secondary: var(--secondary-40);
+  --color-on-secondary: var(--secondary-100);
+  --color-secondary-container: var(--secondary-90);
+  --color-on-secondary-container: var(--secondary-30);
+
+  --color-secondary-fixed: var(--secondary-90);
+  --color-secondary-fixed-dim: var(--secondary-80);
+  --color-on-secondary-fixed: var(--secondary-10);
+  --color-on-secondary-fixed-variant: var(--secondary-30);
+
+  --color-tertiary: var(--tertiary-40);
+  --color-on-tertiary: var(--tertiary-100);
+  --color-tertiary-container: var(--tertiary-90);
+  --color-on-tertiary-container: var(--tertiary-30);
+
+  --color-tertiary-fixed: var(--tertiary-90);
+  --color-tertiary-fixed-dim: var(--tertiary-80);
+  --color-on-tertiary-fixed: var(--tertiary-10);
+  --color-on-tertiary-fixed-variant: var(--tertiary-30);
+
+  --color-error: var(--error-40);
+  --color-on-error: var(--error-100);
+  --color-error-container: var(--error-90);
+  --color-on-error-container: var(--error-30);
+
+  --color-surface-dim: var(--neutral-87);
+  --color-surface: var(--neutral-98);
+  --color-surface-bright: var(--neutral-98);
+
+  --color-surface-container-lowest: var(--neutral-100);
+  --color-surface-container-low: var(--neutral-96);
+  --color-surface-container: var(--neutral-94);
+  --color-surface-container-high: var(--neutral-92);
+  --color-surface-container-highest: var(--neutral-90);
+
+  --color-on-surface: var(--neutral-10);
+  --color-on-surface-variant: var(--neutral-variant-30);
+  --color-outline: var(--neutral-variant-50);
+  --color-outline-variant: var(--neutral-variant-80);
+
+  --color-inverse-surface: var(--neutral-20);
+  --color-inverse-on-surface: var(--neutral-95);
+  --color-inverse-primary: var(--primary-80);
+  --color-scrim: var(--neutral-10);
+  --color-shadow: var(--neutral-0);
+
+  --spacing: 1px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* https://tailwindcss.com/docs/margin#using-a-custom-value */
+/* https://tailwindcss.com/docs/theme#theme-variable-namespaces */
+/* https://m3.material.io/styles/spacing/tokens */
+/* converting dp to pixels in web */
+/* material design margin and padding tokenize figma */
